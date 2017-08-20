@@ -337,7 +337,6 @@ body {
     width: 100%;
     height: 500px;
     position: relative;
-    padding-top: 30px;
 }
 
 .slider-bot__angle {
@@ -411,19 +410,148 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-    bottom: 130px;
+    bottom: 100px;
 }
 
-.slider-bot__control i {
-    color: #6bbbc1;
+.slider-bot__circle {
+    display: block;
+    float: left;
+    width: 13px;
+    height: 13px;
+    border: 1.5px solid #6bbbc1;
     border-radius: 50%;
+    margin: 0px 2px;
 }
 
-.slider-bot__control i:hover {
+.slider-bot__circle:hover {
     background: white;
+    border-color: white;
 }
 
-.slider-bot__control i::before {
-    margin: 0;
-    padding: 0;
+.map {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.footer {
+    width: 100%;
+    height: 250px;
+    background: #2f3338;
+}
+
+.footer__contacts {
+    width: 75%;
+    min-height: 150px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+    padding-top: 70px;
+}
+
+.footer__contact-info {
+    width: 32%;
+    height: 80px;
+    color: #6bbbc1;
+    position: relative;
+}
+
+.footer__contact-info i {
+    width: 56px;
+    height: 50px;
+    font-size: 40px;
+    color: white;
+    border-radius: 50%;
+    background: #44484b;
+    padding-top: 5px;
+    display: block;
+    float: left;
+}
+
+.footer__address {
+    width: 205px;
+    float: left;
+    padding-top: 16px;
+    padding-left: 20px;
+    font-size: 12px;
+}
+
+.footer__phone {
+    width: 205px;
+    float: left;
+    padding-top: 5px;
+    padding-left: 20px;
+    color: white;
+    line-height: 1.2;
+}
+
+.footer__phone-title {
+    color: #6bbbc1;
+    font-size: 12px;
+}
+
+.footer__mail {
+    width: 205px;
+    float: left;
+    padding-top: 21px;
+    padding-left: 20px;
+    font-size: 12px;
+    color: #6bbbc1;
+}
+
+.footer__bottom {
+    width: 100%;
+    height: 50px;
+    background: #26292f;
+}
+
+.footer__privacy {
+    width: 65%;
+    font-size: 12px;
+    color: white;
+    margin-left: 12.5%;
+    padding-top: 32px;
+    float: left;
+}
+
+.footer__social {
+    width: 12%;
+    float: left;
+    padding-top: 18px;
+}
+
+.footer__social-link {
+    color: #3b3d41;
+}
+
+.footer__social-link:hover {
+    color: #6bbbc1;
+}
+
+.footer__social-link:focus {
+    color: #6bbbc1;
+}
+
+.footer__social i {
+    font-size: 28px;
+}
+
+.footer__up {
+    float: right;
+    padding-top: 30px;
+    margin-right: 2%;
+}
+
+.footer__up-link {
+    color: #3b3d41;
+}
+
+.footer__up-link:hover {
+    color: #6bbbc1;
+}
+
+.footer__social-link:focus {
+    color: #6bbbc1;
 }

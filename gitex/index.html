@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" name="top">
         <div class="header__wrap">
             <div class="header__logo">
                 <img src="./images/logo.png" alt="logo">
@@ -173,11 +173,45 @@
             </li>
         </ul>
         <div class="slider-bot__control">
-            <i class="icon-circle-thin"></i>
-            <i class="icon-circle-thin"></i>
-            <i class="icon-circle-thin"></i>
+            <span class="slider-bot__circle"></span>
+            <span class="slider-bot__circle"></span>
+            <span class="slider-bot__circle"></span>
+        </div>
+    </div>
+    <div class="map"></div>
+    <div class="footer">
+        <div class="footer__contacts">
+            <div class="footer__contact-info">
+                <i class="icon-home-1"></i>
+                <p class="footer__address">4578 Marmona Road, Glasgow D04 89GR</p>
+            </div>
+            <div class="footer__contact-info">
+                <i class="icon-phone-1"></i>
+                <p class="footer__phone">
+                    <span class="footer__phone-title">Call us:</span>
+                    <br/>800 2345 6789
+                </p>
+            </div>
+            <div class="footer__contact-info">
+                <i class="icon-mail"></i>
+                <a class="footer__mail" href="Admin@demolink.org">Admin@demolink.org</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__privacy">Gitex © 2015. Privacy Policy</div>
+            <div class="footer__social">
+                <a class="footer__social-link" href="#"><i class="icon-facebook"></i></a>
+                <a class="footer__social-link" href="#"><i class="icon-twitter"></i></a>
+                <a class="footer__social-link" href="#"><i class="icon-gplus"></i></a>
+            </div>
+            <div class="footer__up">
+                <a class="footer__up-link" href="#top"><i class="icon-up-open"></i>
+            </div>
         </div>
     </div>
 </body>
+<script src="./js/map.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsdF0xAx1vGlwxEwqvg9MWftYHFQhqAAY&callback=initMap">
+</script>
 
 </html>
