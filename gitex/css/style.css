@@ -5,7 +5,7 @@ body {
 
 .header {
     width: 100%;
-    height: 66px;
+    height: 52px;
     background: #373b40;
 }
 
@@ -15,33 +15,51 @@ body {
 }
 
 .header__logo {
-    width: 356px;
-    height: 66px;
+    width: 280px;
+    height: 52px;
     float: left;
+}
+
+.header__logo img {
+    width: inherit;
+    height: inherit;
 }
 
 .header__menu {
     float: right;
-    height: 66px;
+    height: 52px;
 }
 
 .header__menu-list {
-    padding: 25px 0px;
+    padding: 18px 0px;
+    font-size: 14px;
 }
 
 .header__menu-item {
     display: inline;
-    padding: 6px;
+    margin-left: -.36em;
+}
+
+.header__menu-item:first-child {
+    margin-left: 0;
 }
 
 .header__menu-item--active a {
     background: #69bcc1;
-    padding: 25px 10px;
 }
 
 .header__menu-item a {
     color: white;
     text-decoration: none;
+    padding: 25px 10px;
+}
+
+.header__menu-item a:hover {
+    background: #69bcc1;
+}
+
+.header__menu-item a:focus {
+    background: #6cc2c7;
 }
 
 .slider {
@@ -158,15 +176,21 @@ body {
 
 .advantages__more {
     padding: 10px 30px;
+    display: inline-block;
     background: #69bcc1;
-    border: 0;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
     text-transform: uppercase;
     margin-top: 10px;
 }
 
-.advantages__more a {
-    color: #fff;
-    text-decoration: none;
+.advantages__more:hover {
+    text-decoration: underline;
+}
+
+.advantages__more:focus {
+    text-decoration: underline;
 }
 
 .advantages__info i {
@@ -244,16 +268,21 @@ body {
 }
 
 .company__more {
+    display: inline-block;
     padding: 10px 30px;
     background: #373b40;
-    border: 0;
+    color: #fff;
+    text-decoration: none;
     text-transform: uppercase;
     margin-top: 100px;
 }
 
-.company__more a {
-    color: #fff;
-    text-decoration: none;
+.company__more:hover {
+    text-decoration: underline;
+}
+
+.company__more:focus {
+    text-decoration: underline;
 }
 
 .company__bottom {
@@ -554,4 +583,8 @@ body {
 
 .footer__social-link:focus {
     color: #6bbbc1;
+}
+
+@media screen and (max-width: 900px) {
+  
 }
