@@ -144,8 +144,8 @@ body {
 }
 
 .advantages__info-wrap {
-    width: 255px;
-    height: 200px;
+    width: 84%;
+    display: inline-block;
     position: absolute;
     margin: auto;
     left: 0;
@@ -155,7 +155,7 @@ body {
 }
 
 .advantages__title {
-    font-size: 24px;
+    font-size: 2vw;
     color: #fff;
     text-transform: uppercase;
     margin-bottom: 5px;
@@ -168,21 +168,21 @@ body {
 }
 
 .advantages__text {
-    font-size: 13px;
+    font-size: 11px;
     color: #fff;
     line-height: 1.5;
     margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .advantages__more {
-    padding: 10px 30px;
+    padding: 15px 44px;
     display: inline-block;
     background: #69bcc1;
     color: white;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 15px;
     text-transform: uppercase;
-    margin-top: 10px;
 }
 
 .advantages__more:hover {
@@ -348,15 +348,16 @@ body {
 }
 
 .solutions__info-subtitle {
-    width: 200px;
+    width: 61%;
     display: block;
     float: left;
-    font-size: 25px;
+    font-size: 2vw;
     margin-bottom: 20px;
     line-height: 1.2;
 }
 
 .solutions__info-text {
+    float: left;
     font-size: 11px;
     text-transform: none;
     line-height: 1.5;
@@ -397,7 +398,6 @@ body {
 
 .slider-bot__img {
     width: 100%;
-    height: inherit;
     opacity: 0.4;
 }
 
@@ -482,7 +482,8 @@ body {
 
 .footer__contact-info {
     width: 32%;
-    height: 80px;
+    height: 50px;
+    display: table;
     color: #6bbbc1;
     position: relative;
 }
@@ -495,25 +496,25 @@ body {
     border-radius: 50%;
     background: #44484b;
     padding-top: 5px;
+    margin-right: 20px;
     display: block;
     float: left;
 }
 
 .footer__address {
-    width: 205px;
-    float: left;
-    padding-top: 16px;
-    padding-left: 20px;
+    padding-right: 14px;
     font-size: 12px;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .footer__phone {
-    width: 205px;
-    float: left;
-    padding-top: 5px;
-    padding-left: 20px;
+    width: 225px;
     color: white;
     line-height: 1.2;
+    font-size: 12px;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .footer__phone-title {
@@ -522,12 +523,12 @@ body {
 }
 
 .footer__mail {
-    width: 205px;
-    float: left;
-    padding-top: 21px;
-    padding-left: 20px;
+    width: 225px;
     font-size: 12px;
     color: #6bbbc1;
+    font-size: 12px;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .footer__bottom {
@@ -546,7 +547,7 @@ body {
 }
 
 .footer__social {
-    width: 12%;
+    width: 130px;
     float: left;
     padding-top: 18px;
 }
@@ -585,6 +586,12 @@ body {
     color: #6bbbc1;
 }
 
-@media screen and (max-width: 900px) {
-  
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
 }
+
+@media screen and (max-width: 900px) {}
+
+@media screen and (max-width: 768px) {}
