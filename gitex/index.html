@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./fonts/css/fontello.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 </head>
 
 <body>
@@ -15,6 +16,9 @@
         <div class="header__wrap">
             <div class="header__logo">
                 <img src="./images/logo.png" alt="logo">
+            </div>
+            <div class="header__touch-menu">
+                <a href="#">Menu</a>
             </div>
             <div class="header__menu">
                 <ul class="header__menu-list">
@@ -210,6 +214,11 @@
         </div>
     </div>
 </body>
+<script>
+        $(".header__touch-menu").click(function () {
+            $(".header__menu").toggleClass("active");
+        });
+    </script>
 <script src="./js/map.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsdF0xAx1vGlwxEwqvg9MWftYHFQhqAAY&callback=initMap">
 </script>
