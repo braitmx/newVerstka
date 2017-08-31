@@ -675,7 +675,7 @@ body {
         color: bisque;
     }
     .header__touch-menu a:focus {
-        text-decoration: underline;
+        color: #e6e6e6;
     }
     .active {
         display: flex;
@@ -696,16 +696,38 @@ body {
     }
     .header__menu-item a {
         display: block;
-        color: white;
+        color: #373b40;
         text-decoration: none;
         padding: 8px 10px;
     }
     .header__menu-item a:hover {
-        transition: 1s ease 0s;
+        transition: .5s ease 0s;
+        color: #fff;
         background: #6bbbc1;
     }
     .header__menu-item a:focus {
-        transition: 1s ease 0s;
+        transition: .5s ease 0s;
         background: #6bbbc1;
+    }
+
+    .slider {
+        height: 300px;
+    }
+    .slider__frame {
+        width: 90%;
+        height: 300px;
+    }
+    .slider__left {
+        width: 5%;
+    }
+    .slider__left i {
+        right: -15px;
+    }
+    .slider__right {
+        width: 5%;
+    }
+
+     .slider__right i {
+        left: -15px;
     }
 }
