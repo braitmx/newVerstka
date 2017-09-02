@@ -151,11 +151,7 @@ body {
 .advantages__info-wrap {
     width: 84%;
     display: inline-block;
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 20px;
+    padding: 20px 20px;
     overflow: hidden;
 }
 
@@ -665,6 +661,7 @@ body {
     .header__touch-menu {
         display: block;
         padding-top: 12px;
+        font-size: 14px;
     }
     .header__touch-menu a {
         color: white;
@@ -709,7 +706,6 @@ body {
         transition: .5s ease 0s;
         background: #6bbbc1;
     }
-
     .slider {
         height: 300px;
     }
@@ -726,8 +722,78 @@ body {
     .slider__right {
         width: 5%;
     }
-
-     .slider__right i {
+    .slider__right i {
         left: -15px;
+    }
+    .advantages {
+        box-sizing: border-box;
+        height: unset;
+    }
+    .advantages__wrap {
+        width: 90%;
+        justify-content: space-around;
+        align-items: stretch;
+        height: unset;
+    }
+    .advantages__info {
+        width: 100%;
+        height: unset;
+        margin-bottom: 10px;
+    }
+    .advantages__info-wrap {
+        width: 90%;
+    }
+    .advantages__title {
+        font-size: 15px;
+    }
+    .advantages__info i {
+        font-size: 165px;
+    }
+    .advantages__bottom {
+        border-top-width: 55px;
+    }
+    .company__wrap {
+        width: 90%;
+    }
+    .company__title {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    .company__subtitle {
+        font-size: 12px;
+    }
+    .company__info-block {
+        width: 100%;
+        height: unset;
+        margin-bottom: 20px;
+    }
+    .company__info-img {
+        width: 55%;
+    }
+    .company__more {
+        margin-top: 55px;
+    }
+    .company__bottom {
+        border-bottom-width: 55px;
+    }
+    .solutions__title {
+        font-size: 25px;
+        padding-top: 40px;
+    }
+
+    .slider-bot__angle {
+        border-top-width: 55px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .header__wrap {
+        width: 95%;
+    }
+    .active {
+        width: 95%;
+    }
+    .company__info-img {
+        width: 75%;
     }
 }
