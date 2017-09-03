@@ -123,15 +123,15 @@ body {
 
 .advantages {
     width: 100%;
-    height: 300px;
     background: #6bbbc1;
     position: relative;
     padding-top: 30px;
+    padding-bottom: 65px;
+    box-sizing: border-box;
 }
 
 .advantages__wrap {
     width: 75%;
-    height: inherit;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -140,7 +140,6 @@ body {
 
 .advantages__info {
     width: 32%;
-    height: 240px;
     background: #3f4a4f;
     overflow: hidden;
     position: relative;
@@ -717,17 +716,16 @@ body {
         width: 5%;
     }
     .slider__left i {
-        right: -15px;
+        right: -17px;
     }
     .slider__right {
         width: 5%;
     }
     .slider__right i {
-        left: -15px;
+        left: -17px;
     }
     .advantages {
         box-sizing: border-box;
-        height: unset;
     }
     .advantages__wrap {
         width: 90%;
@@ -780,9 +778,59 @@ body {
         font-size: 25px;
         padding-top: 40px;
     }
-
+    .solutions__info {
+        width: 90%;
+    }
+    .solutions__info-block {
+        width: 100%;
+        height: unset;
+        margin-bottom: 20px;
+    }
+    .solutions__info-subtitle {
+        width: 75%;
+        font-size: 18px;
+        padding: 4% 0;
+        margin-bottom: 0;
+    }
+    .solutions__info-number {
+        margin-bottom: 10px;
+    }
+    .slider-bot {
+        height: 65vw;
+    }
+    .slider-bot__info {
+        top: 30%;
+    }
     .slider-bot__angle {
         border-top-width: 55px;
+    }
+    .slider-bot__title {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .slider-bot__control {
+        bottom: 8%;
+    }
+    .footer__contacts {
+        width: 90%;
+        padding: 20px 0px 10px;
+    }
+    .footer__contact-info {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .footer__address {
+        width: 100%;
+    }
+    .footer__phone {
+        width: 100%;
+    }
+    .footer__mail {
+        width: 100%;
+    }
+    .footer__privacy {
+        width: 53%;
+        margin-left: 5%;
     }
 }
 
@@ -795,5 +843,34 @@ body {
     }
     .company__info-img {
         width: 75%;
+    }
+    .solutions__info-subtitle {
+        width: 70%;
+        font-size: 15px;
+    }
+    .slider-bot__info {
+        top: 20%;
+        height: unset;
+    }
+    .slider-bot__title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .slider-bot__subtitle {
+        font-size: 16px;
+    }
+    .slider-bot__text {
+        font-size: 12px;
+    }
+    .slider-bot__control {
+        display: none;
+    }
+    .footer__bottom {
+        height: 100px;
+    }
+    .footer__privacy {
+        width: 95%;
+        padding-top: 30px;
+        margin-left: 5%;
     }
 }
