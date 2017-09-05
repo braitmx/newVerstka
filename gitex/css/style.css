@@ -1,11 +1,11 @@
-html,
-body {
+html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
 }
 
 .header {
     width: 100%;
-    height: 52px;
+    height: 60px;
     background: #373b40;
 }
 
@@ -15,8 +15,8 @@ body {
 }
 
 .header__logo {
-    width: 280px;
-    height: 52px;
+    width: 323px;
+    height: 60px;
     float: left;
 }
 
@@ -27,7 +27,7 @@ body {
 
 .header__menu {
     float: right;
-    height: 52px;
+    height: 60px;
 }
 
 .header__touch-menu {
@@ -36,8 +36,8 @@ body {
 }
 
 .header__menu-list {
-    padding: 18px 0px;
-    font-size: 14px;
+    padding: 24px 0px;
+    font-size: 13px;
 }
 
 .header__menu-item {
@@ -88,12 +88,17 @@ body {
     position: absolute;
     top: 50%;
     border-radius: 50%;
+    font-size: 18px;
     background: white;
-    padding: 7px 4px;
+    padding: 15px 12px;
 }
 
 .slider__control:hover .slider__control-icon {
     background: #6bbbc1;
+}
+
+.slider__control-icon:before {
+    font-weight: bold;
 }
 
 .slider__left i {
@@ -210,7 +215,8 @@ body {
     border-top: 120px solid #6bbbc1;
     border-bottom: 0px;
     border-left: 0px;
-    border-right: calc(100vw - 18px) solid #fff;
+    border-right: calc(100vw) solid #fff;
+    margin-right: calc(-1 * (100vw - 100%));
     color: #fff;
 }
 
@@ -291,7 +297,8 @@ body {
     position: absolute;
     bottom: 0;
     border-bottom: 120px solid #6bbbc1;
-    border-left: calc(100vw - 18px) solid #fff;
+    border-left: calc(100vw) solid #fff;
+    margin-right: calc(-1 * (100vw - 100%));
     color: #fff;
     z-index: -1;
 }
@@ -377,7 +384,8 @@ body {
     border-top: 120px solid #6bbbc1;
     border-bottom: 0px;
     border-left: 0px;
-    border-right: calc(100vw - 18px) solid transparent;
+    border-right: calc(100vw) solid transparent;
+    margin-right: calc(-1 * (100vw - 100%));
     color: #fff;
 }
 
@@ -592,7 +600,7 @@ body {
     clear: both;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 925px) {
     .header {
         height: 41px;
     }
