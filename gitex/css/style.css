@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/Lato/Lato-Light.ttf);
+}
+
+@font-face {
+    font-family: Lato-Bold;
+    src: url(../fonts/Lato/Lato-Bold.ttf);
+}
+
 html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     overflow-x: hidden;
@@ -86,7 +96,7 @@ html {
 
 .slider__control-icon {
     position: absolute;
-    top: 50%;
+    top: 45%;
     border-radius: 50%;
     font-size: 18px;
     background: white;
@@ -112,6 +122,29 @@ html {
     background-image: url(../images/slide1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    line-height: 400px;
+}
+
+.slider__text {
+    line-height: normal;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.slider__small-text {
+    display: block;
+    font-size: 40px;
+    font-family: Lato;
+    color: #383838;
+}
+
+.slider__big-text {
+    width: 300px;
+    display: inline-block;
+    font-size: 41px;
+    font-family: Lato-Bold;
+    text-transform: uppercase;
+    color: #6bbbc1;
 }
 
 .slider__right {
@@ -222,7 +255,7 @@ html {
 
 .company {
     width: 100%;
-    min-height: 584px;
+    min-height: 640px;
     text-align: center;
     text-transform: uppercase;
     position: relative;
@@ -235,12 +268,15 @@ html {
 }
 
 .company__title {
+    font-family: Lato;
     font-size: 33px;
     margin-bottom: 20px;
+    color: #b2b2b2;
 }
 
 .company__title span {
-    font-weight: bold;
+    font-family: Lato-Bold;
+    color: #373b3e;
 }
 
 .company__subtitle {
@@ -268,19 +304,20 @@ html {
 }
 
 .company__info-text {
-    font-size: 11px;
+    font-size: 10.5px;
+    line-height: 2;
     text-transform: none;
-    color: grey;
+    color: #ababab;
 }
 
 .company__more {
     display: inline-block;
-    padding: 10px 30px;
+    padding: 15px 37px;
     background: #373b40;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .company__more:hover {
@@ -313,6 +350,7 @@ html {
 
 .solutions__title {
     font-size: 33px;
+    font-family: Lato;
     color: #fff;
     padding-top: 10px;
     margin-bottom: 40px;
@@ -320,12 +358,12 @@ html {
 }
 
 .solutions__title span {
-    font-weight: bold;
+    font-family: Lato-Bold;
 }
 
 .solutions__info {
     width: 75%;
-    min-height: 300px;
+    min-height: 265px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -365,9 +403,9 @@ html {
 
 .solutions__info-text {
     float: left;
-    font-size: 11px;
+    font-size: 10.5px;
     text-transform: none;
-    line-height: 1.5;
+    line-height: 2;
 }
 
 .slider-bot {
@@ -497,13 +535,14 @@ html {
 }
 
 .footer__contact-info i {
-    width: 56px;
-    height: 50px;
-    font-size: 40px;
+    width: 60px;
+    height: 55px;
+    padding-top: 10px;
+    padding-left: 6px;
+    font-size: 38px;
     color: white;
     border-radius: 50%;
     background: #44484b;
-    padding-top: 5px;
     margin-right: 20px;
     display: block;
     float: left;
@@ -514,20 +553,22 @@ html {
     font-size: 12px;
     display: table-cell;
     vertical-align: middle;
+    line-height: 1.5;
 }
 
 .footer__phone {
     width: 225px;
+    font-family: Lato;
+    font-size: 20px;
     color: white;
     line-height: 1.2;
-    font-size: 12px;
     display: table-cell;
     vertical-align: middle;
 }
 
 .footer__phone-title {
     color: #6bbbc1;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .footer__mail {
@@ -719,6 +760,18 @@ html {
     .slider__frame {
         width: 90%;
         height: 300px;
+        line-height: 300px;
+    }
+    .slider__text {
+        width: 82%;
+        margin-left: 30px;
+    }
+    .slider__small-text {
+        font-size: 25px;
+    }
+    .slider__big-text {
+        width: 300px;
+        font-size: 26px;
     }
     .slider__left {
         width: 5%;
@@ -731,6 +784,10 @@ html {
     }
     .slider__right i {
         left: -17px;
+    }
+    .slider__control-icon {
+        font-size: 15px;
+        padding: 10px 7px;
     }
     .advantages {
         box-sizing: border-box;
