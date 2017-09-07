@@ -25,7 +25,7 @@ html {
 }
 
 .header__logo {
-    width: 323px;
+    width: 322px;
     height: 60px;
     float: left;
 }
@@ -80,49 +80,18 @@ html {
 .slider {
     width: 100%;
     height: 400px;
-}
-
-.slider__left {
-    width: 12.5%;
-    height: inherit;
-    background: linear-gradient(to left, #f0f0f0, #e6e6e6);
-    position: relative;
-    float: left;
-}
-
-.slider__control {
-    color: black;
-}
-
-.slider__control-icon {
-    position: absolute;
-    top: 45%;
-    border-radius: 50%;
-    font-size: 18px;
-    background: white;
-    padding: 15px 12px;
-}
-
-.slider__control:hover .slider__control-icon {
-    background: #6bbbc1;
-}
-
-.slider__control-icon:before {
-    font-weight: bold;
-}
-
-.slider__left i {
-    right: 50px;
+    background-image: url(../images/slide1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
 
 .slider__frame {
     width: 75%;
     height: 400px;
-    float: left;
-    background-image: url(../images/slide1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin: 0 auto;
     line-height: 400px;
+    position: relative;
 }
 
 .slider__text {
@@ -147,16 +116,36 @@ html {
     color: #6bbbc1;
 }
 
-.slider__right {
-    width: 12.5%;
-    height: inherit;
-    background: linear-gradient(to right, #f0f0f0, #e6e6e6);
-    position: relative;
-    float: right;
+.slider__control {
+    color: black;
+    position: absolute;
+    top: 45%;
+    line-height: normal;
 }
 
-.slider__right i {
-    left: 50px;
+.slider__control--left {
+    left: -80px;
+}
+
+.slider__control--right {
+    right: -30px;
+}
+
+.slider__control-icon {
+    position: absolute;
+    top: 45%;
+    border-radius: 50%;
+    font-size: 18px;
+    background: white;
+    padding: 14px 13px;
+}
+
+.slider__control:hover .slider__control-icon {
+    background: #6bbbc1;
+}
+
+.slider__control-icon:before {
+    font-weight: bold;
 }
 
 .advantages {
@@ -412,6 +401,7 @@ html {
     width: 100%;
     height: 500px;
     position: relative;
+    overflow: hidden;
 }
 
 .slider-bot__angle {
@@ -511,19 +501,19 @@ html {
 
 .footer {
     width: 100%;
-    height: 250px;
+    min-height: 202px;
     background: #2f3338;
 }
 
 .footer__contacts {
     width: 75%;
-    min-height: 150px;
+    min-height: 105px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     overflow: hidden;
-    padding-top: 70px;
+    padding-top: 45px;
 }
 
 .footer__contact-info {
@@ -578,27 +568,36 @@ html {
     font-size: 12px;
     display: table-cell;
     vertical-align: middle;
+    text-decoration: none;
+}
+
+.footer__mail:hover {
+    text-decoration: underline;
+}
+
+.footer__mail:focus {
+    text-decoration: underline;
 }
 
 .footer__bottom {
     width: 100%;
-    height: 50px;
+    height: 52px;
     background: #26292f;
 }
 
 .footer__privacy {
     width: 65%;
-    font-size: 12px;
+    font-size: 10px;
     color: white;
     margin-left: 12.5%;
-    padding-top: 32px;
+    padding-top: 22px;
     float: left;
 }
 
 .footer__social {
     width: 130px;
     float: left;
-    padding-top: 18px;
+    padding-top: 14px;
 }
 
 .footer__social-link {
@@ -614,12 +613,12 @@ html {
 }
 
 .footer__social i {
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .footer__up {
     float: right;
-    padding-top: 30px;
+    padding-top: 22px;
     margin-right: 2%;
 }
 
@@ -628,6 +627,10 @@ html {
 }
 
 .footer__up-link:hover {
+    color: #6bbbc1;
+}
+
+.footer__up-link:focus {
     color: #6bbbc1;
 }
 
@@ -676,7 +679,7 @@ html {
         border-bottom: 85px solid #6bbbc1;
     }
     .company__more {
-        margin-top: 120px;
+        margin-top: 165px;
     }
     .solutions__title {
         font-size: 30px;
@@ -694,8 +697,16 @@ html {
     .slider-bot__angle {
         border-top: 95px solid #6bbbc1;
     }
+
+    .footer__contacts {
+        overflow: unset;
+    }
+
     .footer__contact-info i {
         margin-right: 10px;
+    }
+    .footer__phone {
+        font-size: 15px;
     }
 }
 
@@ -770,24 +781,18 @@ html {
         font-size: 25px;
     }
     .slider__big-text {
-        width: 300px;
+        width: 200px;
         font-size: 26px;
-    }
-    .slider__left {
-        width: 5%;
-    }
-    .slider__left i {
-        right: -17px;
-    }
-    .slider__right {
-        width: 5%;
-    }
-    .slider__right i {
-        left: -17px;
     }
     .slider__control-icon {
         font-size: 15px;
-        padding: 10px 7px;
+        padding: 8px 7px;
+    }
+    .slider__control--left {
+        left: -25px;
+    }
+    .slider__control--right {
+        right: 10px;
     }
     .advantages {
         box-sizing: border-box;
@@ -884,6 +889,11 @@ html {
         width: 100%;
         margin-bottom: 10px;
     }
+    .footer__contact-info i {
+        font-size: 32px;
+        width: 54px;
+        height: 47px;
+    }
     .footer__address {
         width: 100%;
     }
@@ -902,6 +912,9 @@ html {
 @media screen and (max-width: 450px) {
     .header__wrap {
         width: 95%;
+    }
+    .slider__control {
+        display: none;
     }
     .active {
         width: 95%;
