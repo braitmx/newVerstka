@@ -144,7 +144,7 @@ html {
     color: #393939;
     text-decoration: none;
     display: inline-block;
-    padding: 30px 22px;
+    padding: 28.5px 22px;
     background: #efbf2e;
 }
 
@@ -827,7 +827,7 @@ html {
 }
 
 .contacts__social {
-    width: 22%;
+    width: 22.3%;
     height: 50px;
     position: relative;
     box-sizing: border-box;
@@ -845,10 +845,6 @@ html {
     border-radius: 50%;
     background: #fff;
     padding: 5px 5px;
-}
-
-.contacts__social-icon-last:before {
-    margin-right: 0;
 }
 
 .contacts__up {
@@ -958,27 +954,246 @@ html {
         margin: 54.85px 15px;
     }
     .welcome__offers-logo--mid {
-        margin: 16px 102px;
+        margin: 26px 102px;
     }
     .welcome__desc {
         margin-top: 40px;
     }
     .provide__solutions-wrap {
-        width: 485px;
+        width: 483px;
+    }
+    .provide__solutions {
+        width: 30.2%;
     }
     .mid-banner__info {
         width: 485px;
+        padding-left: 15px;
     }
     .advantages__info-block {
         width: 85%;
     }
+    .advantages__title {
+        width: 60%;
+    }
+    .advantages__title-text {
+        font-size: 23px;
+        margin: 0 0 0 -120px;
+    }
+    .advantages__desc {
+        width: 40%;
+        padding: 25px 14px;
+    }
+    .advantages__text {
+        width: 100%;
+    }
+    .news {
+        height: 500px;
+    }
     .news__wrap {
         width: 85%;
+    }
+    .news__archive {
+        width: 100%;
+        padding-top: 10px;
+        padding-left: 24px;
+    }
+    .news__archive-icon {
+        display: block;
+        float: left;
+        margin-right: 48px;
+    }
+    .news__archive-title {
+        font-size: 25px;
+        width: 61%;
+        float: left;
+        margin-top: 10px;
+    }
+    .news__view-archive {
+        margin-top: 15px;
+    }
+    .news__actual {
+        width: 100%;
+    }
+    .news__actual-date {
+        display: block;
+        float: left;
+        margin-right: 35px;
+    }
+    .news__actual-title {
+        margin-top: 25px;
+    }
+    .news__actual-text {
+        max-height: 60px;
+        overflow: hidden;
     }
     .portfolio__wrap {
         width: 450px;
     }
     .contacts__wrap {
-        width: 450px;
+        width: 90%;
+    }
+    .contacts__address {
+        width: 33.4%;
+    }
+    .contacts__social {
+        width: 155px;
+        padding-left: 0;
+    }
+    .contacts__up {
+        right: 0px;
+        bottom: 38px;
+    }
+    .contacts__up-link {
+        width: 25px;
+        height: 24px;
+        padding: 2px 4px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .slider__title {
+        font-size: 29px;
+    }
+    .welcome {
+        height: 900px;
+    }
+    .welcome__wrap {
+        width: 100%;
+        text-align: center;
+    }
+    .welcome__sub-title {
+        width: 98%;
+    }
+    .welcome__offers-logo {
+        width: 150px;
+        height: 86.6px;
+        margin: 43.30px 4px;
+    }
+    .welcome__offers-logo:before,
+    .welcome__offers-logo:after {
+        border-left-width: 75px;
+        border-right-width: 75px;
+    }
+    .welcome__offers-logo:before {
+        border-bottom-width: 43.30px;
+    }
+    .welcome__offers-logo:after {
+        border-top-width: 43.30px;
+    }
+    .welcome__logo-icon {
+        font-size: 50px;
+    }
+    .welcome__offers-logo--mid {
+        margin: 8px 80px;
+    }
+    .welcome__desc {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .provide {
+        height: 670px;
+        overflow: hidden;
+    }
+    .provide__subtitle {
+        font-size: 11px;
+    }
+    .provide__solutions-wrap {
+        width: 95%;
+        flex-direction: column;
+    }
+    .provide__solutions {
+        width: 100%;
+    }
+    .provide__solutions-text {
+        margin: 20px 0;
+    }
+    .mid-banner__sub-title {
+        font-size: 23px;
+    }
+    .advantages__info-block {
+        width: 95%;
+    }
+    .advantages__title-text {
+        width: 173px;
+        font-size: 16px;
+        margin-left: -85px;
+    }
+    .advantages__title-text--bot {
+        width: 193px;
+    }
+    .news__wrap {
+        width: 95%;
+    }
+    .news__archive {
+        padding-left: 3px;
+    }
+    .news__archive-icon {
+        margin-right: 19px;
+    }
+    .news__archive-title {
+        width: 59%;
+    }
+    .news__actual {
+        margin-top: 20px;
+    }
+    .news__actual-date {
+        width: 100px;
+        height: 57.74px;
+        margin: 28.87px 0;
+        font-size: 48px;
+        margin-right: 20px;
+    }
+    .news__actual-date:before,
+    .news__actual-date:after {
+        border-left-width: 50px;
+        border-right-width: 50px;
+    }
+    .news__actual-date:before {
+        border-bottom-width: 28.87px;
+    }
+    .news__actual-date:after {
+        border-top-width: 28.87px;
+    }
+    .news__actual-month {
+        margin-top: -6px;
+    }
+    .news__actual-title {
+        margin-top: 10px;
+    }
+    .news__actual__more {
+        margin-top: 10px;
+    }
+    .portfolio {
+        padding-top: 125px;
+    }
+    .portfolio__wrap {
+        width: 95%;
+    }
+    .portfolio__title {
+        font-size: 40px;
+    }
+    .portfolio__desc {
+        font-size: 18px;
+    }
+    .contacts__wrap {
+        flex-direction: column;
+    }
+    .contacts__privacy {
+        width: 90%;
+        padding-top: 12px;
+    }
+    .contacts__address {
+        width: 90%;
+    }
+    .contacts__address-icon {
+        display: none;
+    }
+    .contacts__address {
+        padding-top: 0;
+        height: 40px;
+    }
+    .contacts__social {
+        padding-top: 0;
     }
 }
