@@ -200,7 +200,9 @@ html {
 
 .welcome {
     width: 100%;
-    height: 780px;
+    display: inline-block;
+    padding-bottom: 50px;
+    overflow: hidden;
     background-color: #efbf2e;
     text-transform: uppercase;
     text-align: center;
@@ -938,9 +940,6 @@ html {
         transition: .5s ease 0s;
         background: #1e1e1e;
     }
-    .welcome {
-        height: 990px;
-    }
     .welcome__wrap {
         width: 450px;
     }
@@ -1053,9 +1052,6 @@ html {
 @media screen and (max-width: 500px) {
     .slider__title {
         font-size: 29px;
-    }
-    .welcome {
-        height: 900px;
     }
     .welcome__wrap {
         width: 100%;
