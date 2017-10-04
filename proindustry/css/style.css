@@ -51,7 +51,7 @@ html {
     margin-bottom: 8px;
 }
 
-.header__title span {
+.header__title-color {
     color: #efbf2e;
 }
 
@@ -60,7 +60,7 @@ html {
     letter-spacing: 4px;
 }
 
-.header__sub-title span {
+.header__sub-title-point {
     letter-spacing: 1px;
 }
 
@@ -140,7 +140,7 @@ html {
     text-align: center;
 }
 
-.touch-menu a {
+.touch-menu-link {
     color: #393939;
     text-decoration: none;
     display: inline-block;
@@ -148,11 +148,11 @@ html {
     background: #efbf2e;
 }
 
-.touch-menu a:hover {
+.touch-menu-link:hover {
     text-decoration: underline;
 }
 
-.touch-menu a:focus {
+.touch-menu-link:focus {
     text-decoration: underline;
 }
 
@@ -180,19 +180,19 @@ html {
     margin-left: 0;
 }
 
-.menu-item a {
+.menu-link {
     color: #393939;
     text-decoration: none;
     padding: 30px 22px;
 }
 
-.menu-item a:hover {
+.menu-link:hover {
     text-decoration: underline;
     color: #fff;
     background-color: #efbf2e;
 }
 
-.menu-item a:focus {
+.menu-link:focus {
     text-decoration: underline;
     color: #fff;
     background-color: #efbf2e;
@@ -264,11 +264,12 @@ html {
     border-top: 54.85px solid #1e1e1e;
 }
 
-.welcome__offers-logo--center {
+.welcome__offers-logo:nth-child(2) {
     margin: 54.85px 15px;
 }
 
-.welcome__offers-logo--bottom {
+.welcome__offers-logo:nth-child(4),
+.welcome__offers-logo:nth-child(5) {
     margin: 15px 7.5px;
 }
 
@@ -315,6 +316,7 @@ html {
 
 .welcome__more:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .welcome__more:focus {
@@ -330,7 +332,7 @@ html {
 }
 
 .provide__title {
-    margin-top: 50px;
+    padding-top: 50px;
     letter-spacing: 1px;
     font-size: 35px;
     color: #efbf2e;
@@ -429,6 +431,7 @@ html {
 
 .mid-banner__more:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .mid-banner__more:focus {
@@ -444,7 +447,7 @@ html {
     box-sizing: border-box;
 }
 
-.advantages__info-block {
+.advantages__info {
     width: 725px;
     height: 225px;
     margin: 0 auto;
@@ -586,6 +589,7 @@ html {
 
 .news__view-archive:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .news__view-archive:focus {
@@ -594,7 +598,6 @@ html {
 
 .news__actual {
     width: 30.8%;
-    overflow: hidden;
     padding-left: 3px;
 }
 
@@ -678,6 +681,7 @@ html {
     text-decoration: underline;
     border: 1px solid #e5e5e5;
     background: #e5e5e5;
+    cursor: pointer;
 }
 
 .news__actual__more:focus {
@@ -753,6 +757,7 @@ html {
     text-decoration: underline;
     background: #fff;
     color: #000;
+    cursor: pointer;
 }
 
 .portfolio__more:focus {
@@ -925,18 +930,19 @@ html {
         margin-left: 0;
         background: #fff;
     }
-    .menu-item a {
+    .menu-link {
         display: block;
         color: #373b40;
         text-decoration: none;
-        padding: 8px 10px;
+        padding: 24px 10px;
+        background: rgba(222, 222, 222, 0.5)
     }
-    .menu-item a:hover {
+    .menu-link:hover {
         transition: .5s ease 0s;
         color: #fff;
         background: #1e1e1e;
     }
-    .menu-item a:focus {
+    .menu-link:focus {
         transition: .5s ease 0s;
         background: #1e1e1e;
     }
@@ -952,8 +958,12 @@ html {
     .welcome__offers-logo {
         margin: 54.85px 15px;
     }
-    .welcome__offers-logo--mid {
+    .welcome__offers-logo:nth-child(3) {
         margin: 26px 102px;
+    }
+    .welcome__offers-logo:nth-child(4),
+    .welcome__offers-logo:nth-child(5) {
+        margin: 54.85px 15px;
     }
     .welcome__desc {
         margin-top: 40px;
@@ -968,7 +978,7 @@ html {
         width: 485px;
         padding-left: 15px;
     }
-    .advantages__info-block {
+    .advantages__info {
         width: 85%;
     }
     .advantages__title {
@@ -1076,11 +1086,18 @@ html {
     .welcome__offers-logo:after {
         border-top-width: 43.30px;
     }
+    .welcome__offers-logo:nth-child(2) {
+        margin: 43.30px 4px;
+    }
+    .welcome__offers-logo:nth-child(3) {
+        margin: 8px 88px;
+    }
+    .welcome__offers-logo:nth-child(4),
+    .welcome__offers-logo:nth-child(5) {
+        margin: 43.30px 4px;
+    }
     .welcome__logo-icon {
         font-size: 50px;
-    }
-    .welcome__offers-logo--mid {
-        margin: 8px 80px;
     }
     .welcome__desc {
         width: 95%;
@@ -1107,7 +1124,7 @@ html {
     .mid-banner__sub-title {
         font-size: 23px;
     }
-    .advantages__info-block {
+    .advantages__info {
         width: 95%;
     }
     .advantages__title-text {
